@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>groupie-tracker</title>
+    <link  href="/static/index.css" rel="stylesheet">
+</head>
+<body>
+    <h1>groupie-tracker</h1>
+    <div class="grid">
+        {{range .}}
+        <div class="artist">
+            <img src="{{.Image}}" >
+            <h3>{{.Name}}</h3>
+            <a href="/artist/{{.ID}}">
+    <button type="button">View Details</button>
+</a>
+        </div>
+        {{end}}
+    </div>
+</body>
+</html>
+
